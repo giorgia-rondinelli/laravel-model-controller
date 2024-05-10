@@ -14,10 +14,17 @@ class PageController extends Controller
 
     public function films(){
 
-        $movies = Movie::all();
+        $movies = Movie::orderBy('title')->get();
 
 
 
         return view('films', compact('movies'));
+    }
+
+    public function bestfilms(){
+        $movies= Movie::where('vote','>',8)->get();
+
+        return view('films', compact('movies'));
+
     }
 }
