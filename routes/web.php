@@ -18,5 +18,8 @@ Route::get('/',[PageController::class, 'index'])->name('home');
 Route::get('/film', [PageController::class, 'films'])->name('films');
 Route::get('/best-films', [PageController::class, 'bestfilms'])->name('best-films');
 
+// la rotta dettaglio riceve dinamicamente l'id del film
+Route::get('/details/{id}', [PageController::class, 'movieDetail'])->name('movieDetail');
+
 
 

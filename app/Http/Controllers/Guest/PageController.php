@@ -27,4 +27,13 @@ class PageController extends Controller
         return view('films', compact('movies'));
 
     }
+    // ricevo l'id del libro per poi stamparlo
+    public function movieDetail($id){
+
+        $movie= Movie::find($id);
+
+        return view('detail', compact('movie'));
+
+
+    }
 }
