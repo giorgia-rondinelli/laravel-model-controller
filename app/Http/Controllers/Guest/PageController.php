@@ -13,9 +13,11 @@ class PageController extends Controller
     }
 
     public function films(){
-        $movies= Movie::all();
-        dump($movies);
 
-        return view('films');
+        $movies = Movie::all();
+
+
+
+        return view('films', compact('movies'));
     }
 }

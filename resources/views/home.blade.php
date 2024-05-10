@@ -1,7 +1,13 @@
 @extends('layout.main')
+<main>
+    <div class="container text-center">
+        @section('content')
 
-@section('content')
+        <h1>Scegli i tuoi film</h1>
+    </div>
 
-<h1>Home</h1>
+
+</main>
+
 
 @endsection

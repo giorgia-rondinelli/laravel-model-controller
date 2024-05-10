@@ -1,6 +1,9 @@
 <header>
-    <h1>Header</h1>
-
-    <a href="{{route('home')}}">Home</a>
+    <h1 class="text-center">Films options</h1>
+    <div class="container p-3 ">
+        <a href="{{route('home')}}">Home</a>
     <a href="{{route('films')}}">Films</a>
+    </div>
+
+
 </header>
