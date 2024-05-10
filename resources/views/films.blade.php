@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1>Nuova Pagina</h1>
+<h1>Lista films</h1>
 
 @endsection
